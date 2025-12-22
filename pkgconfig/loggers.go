@@ -43,18 +43,18 @@ type ConfigLoggers struct {
 		NonExistentMetricsEnabled bool     `yaml:"nonexistent-metrics-enabled" default:"true"`
 		TimeoutMetricsEnabled     bool     `yaml:"timeout-metrics-enabled" default:"false"`
 		HistogramMetricsEnabled   bool     `yaml:"histogram-metrics-enabled" default:"false"`
-		RequestersCacheTTL        int 	   `yaml:"requesters-cache-ttl" default:"3600"`
-		RequestersCacheSize       int 	   `yaml:"requesters-cache-size" default:"250000"`
-		DomainsCacheTTL           int 	   `yaml:"domains-cache-ttl" default:"3600"`
-		DomainsCacheSize          int 	   `yaml:"domains-cache-size" default:"500000"`
-		NoErrorDomainsCacheTTL    int 	   `yaml:"noerror-domains-cache-ttl" default:"3600"`
-		NoErrorDomainsCacheSize   int 	   `yaml:"noerror-domains-cache-size" default:"100000"`
-		ServfailDomainsCacheTTL   int 	   `yaml:"servfail-domains-cache-ttl" default:"3600"`
-		ServfailDomainsCacheSize  int 	   `yaml:"servfail-domains-cache-size" default:"10000"`
-		NXDomainsCacheTTL         int 	   `yaml:"nonexistent-domains-cache-ttl" default:"3600"`
-		NXDomainsCacheSize        int 	   `yaml:"nonexistent-domains-cache-size" default:"10000"`
-		DefaultDomainsCacheTTL    int 	   `yaml:"default-domains-cache-ttl" default:"3600"`
-		DefaultDomainsCacheSize   int 	   `yaml:"default-domains-cache-size" default:"1000"`
+		RequestersCacheTTL        int      `yaml:"requesters-cache-ttl" default:"3600"`
+		RequestersCacheSize       int      `yaml:"requesters-cache-size" default:"250000"`
+		DomainsCacheTTL           int      `yaml:"domains-cache-ttl" default:"3600"`
+		DomainsCacheSize          int      `yaml:"domains-cache-size" default:"500000"`
+		NoErrorDomainsCacheTTL    int      `yaml:"noerror-domains-cache-ttl" default:"3600"`
+		NoErrorDomainsCacheSize   int      `yaml:"noerror-domains-cache-size" default:"100000"`
+		ServfailDomainsCacheTTL   int      `yaml:"servfail-domains-cache-ttl" default:"3600"`
+		ServfailDomainsCacheSize  int      `yaml:"servfail-domains-cache-size" default:"10000"`
+		NXDomainsCacheTTL         int      `yaml:"nonexistent-domains-cache-ttl" default:"3600"`
+		NXDomainsCacheSize        int      `yaml:"nonexistent-domains-cache-size" default:"10000"`
+		DefaultDomainsCacheTTL    int      `yaml:"default-domains-cache-ttl" default:"3600"`
+		DefaultDomainsCacheSize   int      `yaml:"default-domains-cache-size" default:"1000"`
 	} `yaml:"prometheus"`
 	RestAPI struct {
 		Enable            bool   `yaml:"enable" default:"false"`
